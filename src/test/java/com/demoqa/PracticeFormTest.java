@@ -51,7 +51,7 @@ public class PracticeFormTest {
         // submit
         $("#submit").click();
 
-        // check result for
+        // check result form
         $(".modal-content").shouldHave(
                 text("Daria Koroleva"),
                 text("daria@k.com"),
