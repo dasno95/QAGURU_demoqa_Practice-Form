@@ -32,7 +32,7 @@ public class PracticeFormTest {
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOptionByValue("10");
         $(".react-datepicker__year-select").selectOptionByValue("1995");
-        $(".react-datepicker__day--014").click();
+        $(".react-datepicker__day--014:not(.react-datepicker__day--outside-month)").click();
         // select subjects
         $("#subjectsInput").setValue("Computer Science");
         $(".subjects-auto-complete__menu").click();
@@ -51,7 +51,7 @@ public class PracticeFormTest {
         // submit
         $("#submit").click();
 
-        // check result form
+        // check result for
         $(".modal-content").shouldHave(
                 text("Daria Koroleva"),
                 text("daria@k.com"),
