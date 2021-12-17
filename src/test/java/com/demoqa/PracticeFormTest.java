@@ -42,7 +42,7 @@ public class PracticeFormTest {
         $("[for='hobbies-checkbox-2']").click();
         $("[for='hobbies-checkbox-3']").click();
         // upload picture
-        File picture = new File("src/test/resources/DSCF0008.JPG");
+        File picture = new File("src/test/resources/image/DSCF0008.JPG");
         $("#uploadPicture").uploadFile(picture);
         $("#currentAddress").setValue("Street, 1");
         // select state and city
